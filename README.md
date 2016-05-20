@@ -12,7 +12,7 @@ global: npm install webpack -g
 project: npm install webpack --save-dev
 
 4.	Typings, see alse: https://github.com/typings/typings
-# Install Typings CLI utility.
+Install Typings CLI utility.
 npm install typings --global
 
 if you finished above tools, then you can run npm install to get library you needed.
