@@ -16,4 +16,5 @@ Install Typings CLI utility.
 npm install typings --global
 
 if you finished above tools, then you can run npm install to get library you needed.
+
 npm install
