@@ -1,6 +1,7 @@
 # angular2-starter
 
 You should install some tools first:
+
 1.	NodeJs and NPM, you can find at: https://nodejs.org/en/
 
 2.	Typescript, you should global install typescript, see also: https://www.typescriptlang.org/
