@@ -16,12 +16,7 @@ module.exports = {
   	},
 	resolve: {
 		// ensure loader extensions match
-		extensions: ['','.ts','.js','.json','.css','.html'],
-        // replace modules with other path
-        alias:{
-            jquery: path.resolve('./src/lib/jquery.min.js'),
-            kendoui: path.resolve('./src/lib/kendo.all.min.js')
-        }
+		extensions: ['','.ts','.js','.json','.css','.html']
 	},
   	devServer: {
     	historyApiFallback: true,
