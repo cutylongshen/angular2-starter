@@ -1,10 +1,18 @@
-import "es6-shim";
-import "es6-promise";
 import "reflect-metadata";
 import "rxjs";
 import "zone.js/dist/zone";
 
-import { bootstrap }      from 'angular2/platform/browser'
-import { MyAppComponent } from './app/myAppComponent';
+// import {enableProdMode} from '@angular/core';
+// enableProdMode()
 
-bootstrap( MyAppComponent );
+import { HTTP_PROVIDERS } from '@angular/http';
+import { bootstrap }      from '@angular/platform-browser-dynamic';
+import { MyAppComponent } from './app/myAppComponent';
+import { APP_ROUTER_PROVIDERS } from './app/contacts-routes';
+
+bootstrap(
+    MyAppComponent, [
+        HTTP_PROVIDERS,
+        APP_ROUTER_PROVIDERS
+    ])
+    .catch(err => console.error(err));
