@@ -1,0 +1,90 @@
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+ol, ul {
+    -webkit-margin-start: 0px;
+    -webkit-margin-before: 0px;
+    -webkit-padding-start: 0px;
+    list-style: none;
+}
+
+header {
+    top: 0px;
+    width: 100%;
+}
+
+header .logo {
+    width: 154px;
+    height: 30px;
+    background-image: url('./logo_db.png');
+}
+
+header > ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0px;
+}
+
+header > ul > li {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+
+/* important thing is the float, if element floated, it will not adjusted to the normal text. */
+.navbar-brand {
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+}
+
+.navbar-brand:focus,
+.navbar-brand:hover {
+    text-decoration: none;
+}
+
+div.main {
+    position: relative;
+    padding-top: 56px;
+    padding-bottom: 20px;
+}
+
+.main .left-sidebar {
+    width: 120px;
+    position: absolute;
+    left: 0px;
+    top: 56px;
+    padding: 0.5em;
+}
+
+main {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-left: 120px;
+}
+
+footer {
+    width: 100%;
+    height: 20px;
+    -webkit-padding-start: 0px;
+    position: absolute;
+    bottom: 0px;
+}
+
+footer > ul {
+    -webkit-padding-start: 0px;
+    list-style: none;
+    margin: 0px;
+}
+
+footer > ul > li {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+}
