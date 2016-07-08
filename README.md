@@ -16,3 +16,7 @@ if you finished above tools, then you can run npm install to get library you nee
 
 2016.5.23 upgrade to RC.1  
 2016.6.29 upgrade to RC.3
+
+Upgrade items:
+ forms: 0.2.0
+router: 3.0.0-beta.2
