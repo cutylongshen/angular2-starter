@@ -8,7 +8,7 @@ import "zone.js/dist/zone";
 import { HTTP_PROVIDERS } from '@angular/http';
 import { bootstrap }      from '@angular/platform-browser-dynamic';
 import { MyAppComponent } from './app/myAppComponent';
-import { APP_ROUTER_PROVIDERS } from './app/contacts-routes';
+import { APP_ROUTER_PROVIDERS } from './app/app.routes';
 
 bootstrap(
     MyAppComponent, [
