@@ -7,7 +7,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
     directives: [ ROUTER_DIRECTIVES ],
     template: `
     <div>
-        <h1 @myAnimation="isOpen?'open':'closed' ">Hello, Angular 2!</h1>
+        <h1 @myAnimation="isOpen?'open':'closed' ">Hello, Angular 2 Animation!</h1>
         <button (click)="toggle()">Show/Hide</button>
     </div>
     `,

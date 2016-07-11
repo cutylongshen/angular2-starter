@@ -7,6 +7,7 @@ import { Observable, Subscriber } from "rxjs";
     directives: [ ROUTER_DIRECTIVES ],
     template: `
     <div>
+        <h1>Observable</h1>
         <button (click)="triggerClick()">Trigger Observable next</button>
     </div>
     `

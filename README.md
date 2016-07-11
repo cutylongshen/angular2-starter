@@ -20,4 +20,6 @@ if you finished above tools, then you can run npm install to get library you nee
 2016.7.8 Upgrade items:    
  forms: 0.2.0  
 router: 3.0.0-beta.2  
+2016.7.11 Add animation page, observable page, subject page.   
+
 
