@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'contacts-list',
+  directives: [],
   template: `
     <h2>Contacts</h2>
     <ul>
@@ -13,10 +14,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactsListComponent implements OnInit {
   private contacts = null;
+  private divOptions: any;
   constructor() {
   }
 
   ngOnInit() {
+
     this.contacts = [
       {
         name: "alice"

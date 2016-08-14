@@ -3,6 +3,9 @@ var webpack = require("webpack");
 var path = require("path");
 var HtmlwebpackPlugin = require('html-webpack-plugin');
 
+console.log('.....');
+console.log( JSON.stringify(process.env.NODE_ENV) );
+
 module.exports = {
 	entry: {
 		app: "./src/boot.ts",
@@ -27,6 +30,11 @@ module.exports = {
 	},
 
 	plugins: [
+		new webpack.DefinePlugin({
+			'process.env': {
+				'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+			}
+		}),
 		new HtmlwebpackPlugin({
 			title: 'Hello Angular2!',
 			template: './src/index.html',
