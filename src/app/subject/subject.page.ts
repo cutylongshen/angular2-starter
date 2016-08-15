@@ -27,7 +27,6 @@ export class SubjectPage {
 
         let t = new Date().getTime();
         this._subject.next( t );
-        
     }
 
 }

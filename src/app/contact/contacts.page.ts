@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'contacts-list',
+  selector: 'my-app',
   directives: [],
   template: `
     <h2>Contacts</h2>
@@ -14,7 +14,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactsListComponent implements OnInit {
   private contacts = null;
-  private divOptions: any;
   constructor() {
   }
 

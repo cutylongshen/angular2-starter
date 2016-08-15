@@ -1,6 +1,9 @@
 import { Component, EventEmitter, Injector } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
 
+import { HeaderComponent } from './layout/header.component';
+import { AsideLeftComponent } from './layout/aside.left.component';
+import { FooterComponent } from './layout/footer.component';
 import { MyAlert, MyAlertSuccess } from './myDirectives/myAlerts';
 import { TestService } from './test.service';
 
@@ -8,18 +11,21 @@ declare var process: any;
 
 @Component({
     selector: 'my-app',
-    directives: [ ROUTER_DIRECTIVES, MyAlertSuccess ],
+    directives: [ ROUTER_DIRECTIVES, HeaderComponent, AsideLeftComponent, FooterComponent, MyAlertSuccess ],
     template: `
-    <div>
-        <h1>Hello, Angular 2!</h1>
-        
-        <div class="alert-success alert-dismissible">
+    <app-header></app-header>
+    <div class="main">
+        <app-aside-left></app-aside-left>
+        <main>
+            <div class="alert-success alert-dismissible">
             <span class="close">X</span>
             <p>message from a alert.</p>
         </div>
-        <button class="alert-success">I am a alert.</button>
-        <router-outlet></router-outlet>
+            <button class="alert-success">I am a alert.</button>
+            <router-outlet></router-outlet>
+        </main>
     </div>
+    <app-footer></app-footer>
     `,
     providers: [ TestService ]
 })

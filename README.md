@@ -21,5 +21,8 @@ if you finished above tools, then you can run npm install to get library you nee
  forms: 0.2.0  
 router: 3.0.0-beta.2  
 2016.7.11 Add animation page, observable page, subject page.   
+2016.8.15 Upgrade to RC.5    
+
+
 
 
