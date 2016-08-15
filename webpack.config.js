@@ -7,28 +7,27 @@ console.log('.....');
 console.log( JSON.stringify(process.env.NODE_ENV) );
 
 module.exports = {
-	entry: {
-		app: "./src/boot.ts",
+    entry: {
+        app: "./src/boot.ts",
         style: "./src/style.ts"
-	},
-	output: {
-		path: root('dist'),
-		filename: '[name].bundle.js',
-		sourceMapFilename: '[name].map',
-		chunkFilename: '[id].chunk.js'
-	},
-	resolve: {
-		// ensure loader extensions match
-		extensions: ['', '.ts', '.js', '.json', '.css', '.html']
-	},
-	devServer: {
-		historyApiFallback: true,
-		hot: true,
-		inline: true,
-		progress: true,
-		port: 3000
-	},
-
+    },
+    output: {
+        path: root('dist'),
+        filename: '[name].bundle.js',
+        sourceMapFilename: '[name].map',
+        chunkFilename: '[id].chunk.js'
+    },
+    resolve: {
+        // ensure loader extensions match
+        extensions: ['', '.ts', '.js', '.json', '.css', '.html']
+    },
+    devServer: {
+        historyApiFallback: true,
+        hot: true,
+        inline: true,
+        progress: true,
+        port: 3000
+    },
 	plugins: [
 		new webpack.DefinePlugin({
 			'process.env': {
@@ -67,11 +66,11 @@ module.exports = {
 };
 
 function root(args) {
-	args = Array.prototype.slice.call(arguments, 0);
-	return path.join.apply(path, [__dirname].concat(args));
+    args = Array.prototype.slice.call(arguments, 0);
+    return path.join.apply(path, [__dirname].concat(args));
 }
 
 function rootNode(args) {
-	args = Array.prototype.slice.call(arguments, 0);
-	return root.apply(path, ['node_modules'].concat(args));
+    args = Array.prototype.slice.call(arguments, 0);
+    return root.apply(path, ['node_modules'].concat(args));
 }
