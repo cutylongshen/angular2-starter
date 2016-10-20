@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Injector } from '@angular/core';
-import { ROUTER_DIRECTIVES } from '@angular/router';
 
 import { HeaderComponent } from './layout/header.component';
 import { AsideLeftComponent } from './layout/aside.left.component';
@@ -11,7 +10,6 @@ declare var process: any;
 
 @Component({
     selector: 'my-app',
-    directives: [ ROUTER_DIRECTIVES, HeaderComponent, AsideLeftComponent, FooterComponent, MyAlertSuccess ],
     template: `
     <app-header></app-header>
     <div class="main">

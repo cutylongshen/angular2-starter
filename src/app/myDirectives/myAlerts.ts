@@ -1,5 +1,4 @@
 import { Directive, EventEmitter } from '@angular/core';
-import { ROUTER_DIRECTIVES } from '@angular/router';
 
 declare var process: any;
 

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  directives: [],
   template: `
     <h2>Contacts</h2>
     <ul>

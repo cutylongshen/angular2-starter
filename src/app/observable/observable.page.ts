@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
-import { ROUTER_DIRECTIVES } from '@angular/router';
 import { Observable, Subscriber } from "rxjs";
 
 @Component({
     selector: 'my-app',
-    directives: [ ROUTER_DIRECTIVES ],
     template: `
     <div>
         <h1>Observable</h1>

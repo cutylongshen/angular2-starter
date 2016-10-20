@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { state, trigger, animate, style, transition } from '@angular/core';
-import { ROUTER_DIRECTIVES } from '@angular/router';
+
+// <h1 @myAnimation="isOpen?'open':'closed' ">Hello, Angular 2 Animation!</h1>
 
 @Component({
     selector: 'my-app',
-    directives: [ ROUTER_DIRECTIVES ],
     template: `
     <div>
-        <h1 @myAnimation="isOpen?'open':'closed' ">Hello, Angular 2 Animation!</h1>
         <button (click)="toggle()">Show/Hide</button>
     </div>
     `,
