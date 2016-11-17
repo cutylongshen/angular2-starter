@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { state, trigger, animate, style, transition } from '@angular/core';
 
-// <h1 @myAnimation="isOpen?'open':'closed' ">Hello, Angular 2 Animation!</h1>
+// <h1 @myAnimation="isOpen?'open':'closed' ">Hello, Angular 2 Animation!</h1> 
 
 @Component({
     selector: 'my-app',
     template: `
     <div>
+        <h1 [@myAnimation]="isOpen?'open':'closed' ">Hello, Angular 2 Animation!</h1>
         <button (click)="toggle()">Show/Hide</button>
     </div>
     `,
