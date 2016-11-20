@@ -1,9 +1,9 @@
 import { Route, UrlSegment, UrlSegmentGroup } from '@angular/router';
 import { UrlMatchResult } from '@angular/router/src/config';
 
+
 // defaultUrlMatcher
 // https://github.com/angular/angular/blob/master/modules/%40angular/router/src/shared.ts
-
 export function CaseInsensitiveUrlMatcher(
     segments: UrlSegment[], segmentGroup: UrlSegmentGroup, route: Route): UrlMatchResult {
     const path = route.path;
