@@ -32,4 +32,8 @@ export class AppComponent {
         let instance = i.get( TestService );
         instance.sayHello();
     }
+
+    public pressHandler(){
+        console.log(`press handler.`);
+    }
 }

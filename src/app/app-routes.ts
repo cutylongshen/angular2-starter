@@ -16,7 +16,7 @@ export const routes = [
   { path: 'observable', loadChildren: 'observable/observable.module'},
   { path: 'subject', loadChildren: 'subject/subject.module' },
   { path: 'playground', loadChildren: 'playground/playground.module' },
-  { path: 'xxx', component: SplitterPage }
+  { path: 'splitter', component: SplitterPage }
 ];
 
 export const routing = RouterModule.forRoot(routes);
