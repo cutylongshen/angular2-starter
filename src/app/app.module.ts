@@ -15,9 +15,14 @@ import { FooterComponent } from './layout/footer.component';
 import { HomePage } from './home.page';
 import { MyAlert, MyAlertSuccess } from './myDirectives/myAlerts';
 
+import { widgetModule  } from './widgets/widget.module';
+import { PlayGroundModule } from './playground/playground.module';
+
+import { SplitterPage } from './playground/splitter.page';
+
 @NgModule({
-    imports: [ BrowserModule, routing, AnimationModule, ContactModule, ObservableModule, SubjectModule ],
-    declarations: [ MainFrameComponent, HeaderComponent, AsideLeftComponent, FooterComponent, AppComponent, HomePage, MyAlert, MyAlertSuccess ],
+    imports: [ BrowserModule, routing, AnimationModule, ContactModule, ObservableModule, SubjectModule, PlayGroundModule ],
+    declarations: [ MainFrameComponent, HeaderComponent, AsideLeftComponent, FooterComponent, AppComponent, HomePage, MyAlert, MyAlertSuccess, SplitterPage ],
     bootstrap: [ AppComponent ]
 })
 export class AppModule{

@@ -24,6 +24,8 @@ router: 3.0.0-beta.2
 2016.8.15 Upgrade to RC.5    
 2016.10.20 Upgrade to 2.1.0  
 2016.11.15 Upgrade to 2.2.0  
+2016.11.22 Upgrade to 2.2.1, add AOT  
+
 
 
 

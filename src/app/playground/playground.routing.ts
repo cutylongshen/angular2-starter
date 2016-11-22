@@ -1,10 +1,10 @@
 import { Routes, RouterModule } from '@angular/router';
 
 import { CaseInsensitiveUrlMatcher } from '../utility/caseInsensitiveMatcher';
-import { AnimationPage } from './animation.page';
+import { SplitterPage } from './splitter.page';
 
 export const routes = [
-  { path: "animation", component: AnimationPage
+  { path: "splitter", component: SplitterPage
   }
 ];
 
