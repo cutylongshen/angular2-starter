@@ -65,7 +65,7 @@ export class SliderTicksWidget implements OnChanges {
     }
 
     private createTitle(idx: number, step: number): number {
-        return (idx + 1) * step;
+        return idx * step;
     }
 }
 
