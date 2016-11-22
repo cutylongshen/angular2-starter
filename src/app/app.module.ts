@@ -23,17 +23,14 @@ import { MyDraggableDirective } from './myDirectives/draggable.directive';
 
 import { widgetModule  } from './widgets/widget.module';
 import { PlayGroundModule } from './playground/playground.module';
-import { SplitterWidget } from './widgets/splitter.widget';
-import { SplitterPage } from './playground/splitter.page';
-
 
 // InputsModule import KendoDraggableDirective, but doesn't export it.
 // so we need do it byself.
 // if InputsModule add KendoDraggableDirective to export, we can easy use it.
 @NgModule({
-    imports: [ BrowserModule, routing, AnimationModule, ContactModule, ObservableModule, SubjectModule, InputsModule ],
+    imports: [ BrowserModule, routing, AnimationModule, ContactModule, ObservableModule, SubjectModule, InputsModule, PlayGroundModule ],
     declarations: [ MainFrameComponent, HeaderComponent, AsideLeftComponent, FooterComponent, AppComponent, HomePage,
-     MyAlert, MyAlertSuccess, MyDraggableDirective, SplitterPage, SplitterWidget ],
+     MyAlert, MyAlertSuccess, MyDraggableDirective ],
     bootstrap: [ AppComponent ]
 })
 export class AppModule{
