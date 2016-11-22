@@ -28,9 +28,10 @@ import { PlayGroundModule } from './playground/playground.module';
 // so we need do it byself.
 // if InputsModule add KendoDraggableDirective to export, we can easy use it.
 @NgModule({
-    imports: [ BrowserModule, routing, AnimationModule, ContactModule, ObservableModule, SubjectModule, InputsModule, PlayGroundModule ],
+    imports: [ BrowserModule, routing, AnimationModule, ContactModule, ObservableModule, SubjectModule, InputsModule, PlayGroundModule, widgetModule ],
     declarations: [ MainFrameComponent, HeaderComponent, AsideLeftComponent, FooterComponent, AppComponent, HomePage,
      MyAlert, MyAlertSuccess ],
+    exports: [ MyDraggableDirective ],
     bootstrap: [ AppComponent ]
 })
 export class AppModule{
