@@ -11,6 +11,7 @@ export class MyDraggableDirective implements OnDestroy {
     private draggable;
 
     constructor(ngEl: ElementRef) {
+        console.log( ngEl );
         let _this = this;
         this.kendo = {
             drag: new EventEmitter(),

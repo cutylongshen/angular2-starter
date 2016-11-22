@@ -4,9 +4,9 @@ import { Component } from '@angular/core';
     selector: 'my-app',
     template: `
     <div>
-       <h1 myDraggable (kendo.press)="pressHandler()"
-            (kendo.drag)="dragHandler()"
-            (kendo.release) = "releaseHandler()"
+       <h1 myDraggable (kendo.press)="pressHandler($event)"
+            (kendo.drag)="dragHandler($event)"
+            (kendo.release) = "releaseHandler($event)"
         >Hello, Angular 2! </h1>
        <h2 myDraggable  (kendo.press)="pressHandler($event)"
             (kendo.drag)="dragHandler($event)"

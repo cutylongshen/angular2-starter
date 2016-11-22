@@ -30,7 +30,7 @@ import { PlayGroundModule } from './playground/playground.module';
 @NgModule({
     imports: [ BrowserModule, routing, AnimationModule, ContactModule, ObservableModule, SubjectModule, InputsModule, PlayGroundModule ],
     declarations: [ MainFrameComponent, HeaderComponent, AsideLeftComponent, FooterComponent, AppComponent, HomePage,
-     MyAlert, MyAlertSuccess, MyDraggableDirective ],
+     MyAlert, MyAlertSuccess ],
     bootstrap: [ AppComponent ]
 })
 export class AppModule{

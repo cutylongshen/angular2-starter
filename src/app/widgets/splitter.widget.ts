@@ -8,8 +8,9 @@ import { DraggableOptions } from '@telerik/kendo-draggable';
         <h3>Splitter Widget</h3>
         <div style="width: 600px; height: 400px; border: 1px green solid">
             <div style="float: left; width: 200px; height: 400px; border: 1px red solid"></div>
-            <div MyDraggableDirective 
-                 (kendo.press)="press()"
+            <div myDraggable (kendo.press)="press($event)"
+                             (kendo.drag)="drag($event)"
+                             (kendo.release) = "release($event)"
                 style="float: left; width: 10px; height: 400px; border: 1px green solid"></div>
             <div>
                 <h2 myHighlight>Right</h2>
