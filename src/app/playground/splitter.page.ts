@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { state, trigger, animate, style, transition } from '@angular/core';
 
 @Component({
-    selector: 'xxx',
+    selector: 'mySpiltter',
     template: `
     <div>
         <h1 myHighlight>Splitter</h1>

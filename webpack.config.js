@@ -26,7 +26,7 @@ module.exports = {
         hot: true,
         inline: true,
         progress: true,
-        port: 3000
+        port: 3800
     },
 	plugins: [
 		new webpack.DefinePlugin({

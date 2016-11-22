@@ -10,6 +10,7 @@ import { Component } from '@angular/core';
         <ul class="pull-md-left">
             <li><a class="nav-link nav-item" [routerLink]="['/']"> Home</a></li>
             <li><a class="nav-link nav-item" [routerLink]="['/splitter']">Splitter</a></li>
+            <li><a class="nav-link nav-item" [routerLink]="['/slider']">Slider</a></li>
             <li><a class="nav-link nav-item" [routerLink]="['/animation']">Animation</a></li>
             <li><a class="nav-link nav-item" [routerLink]="['/observable']">Observalbe</a></li>
             <li><a class="nav-link nav-item" [routerLink]="['/subject']">Subject</a></li>
