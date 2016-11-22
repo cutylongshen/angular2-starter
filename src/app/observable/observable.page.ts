@@ -21,7 +21,7 @@ export class ObservablePage {
         // so we need save this reference
         let that = this;
 
-        this._observable = Observable.create( function(observer) {
+        this._observable = Observable.create( function(observer: any) {
             
             // save observer reference
             that._observer = observer;

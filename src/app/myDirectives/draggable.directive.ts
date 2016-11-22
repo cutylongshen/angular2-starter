@@ -8,7 +8,7 @@ import Draggable from '@telerik/kendo-draggable';
 export class MyDraggableDirective implements OnDestroy {
 
     kendo: any;
-    private draggable;
+    private draggable: Draggable;
 
     constructor(ngEl: ElementRef) {
         console.log( ngEl );
@@ -21,9 +21,9 @@ export class MyDraggableDirective implements OnDestroy {
 
         if (typeof document !== 'undefined') {
             this.draggable = new Draggable({
-                drag: function (e) { return _this.kendo.drag.next(e); },
-                press: function (e) { return _this.kendo.press.next(e); },
-                release: function (e) { return _this.kendo.release.next(e); }
+                drag: function (e: MouseEvent) { return _this.kendo.drag.next(e); },
+                press: function (e: MouseEvent) { return _this.kendo.press.next(e); },
+                release: function (e: MouseEvent) { return _this.kendo.release.next(e); }
             });
             this.draggable.bindTo(ngEl.nativeElement);
         }

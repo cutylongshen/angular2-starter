@@ -10,14 +10,18 @@
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true
   },
-
+  "typeRoots": [
+    "../node_modules/@types"
+  ],
+  "types": [
+    "core-js"
+  ],
   "files": [
     "src/app/app.module.ts",
     "src/boot.ts"
   ],
-
   "angularCompilerOptions": {
-   "genDir": "aot",
-   "skipMetadataEmit" : true
- }
+    "genDir": "aot",
+    "skipMetadataEmit": true
+  }
 }

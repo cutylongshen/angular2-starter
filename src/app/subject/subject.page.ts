@@ -22,13 +22,13 @@ export class SubjectPage {
     constructor(ref: ElementRef) {
 
         const draggable = new Draggable({
-            press: function (e) {
+            press: function (e: MouseEvent) {
                 console.log("pressed", e.pageX, e.pageY);
             },
-            drag: function (e) {
+            drag: function (e: MouseEvent) {
                 console.log("drag", e.pageX, e.pageY);
             },
-            release: function (e) {
+            release: function (e: MouseEvent) {
                 console.log("release", e.pageX, e.pageY);
             }
         });

@@ -21,7 +21,7 @@ export class MyAlertSuccess {
         console.info("alter success loaded.");
     }
 
-    onClick(event){
+    onClick(event: Event){
         console.log(`alert clicked.`);
         console.log(event );
     }

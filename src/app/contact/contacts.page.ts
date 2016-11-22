@@ -12,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
   `
 })
 export class ContactsListComponent implements OnInit {
-  private contacts = null;
+  private contacts: Array<any> = null;
   constructor() {
   }
 
